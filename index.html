@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200;300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Gluten', cursive;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 10px;
+        }
+        h1{
+            margin: 4rem;
+            font-size: 6rem;
+        }
+        #boxar{
+            height: auto;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            flex-wrap: wrap; transition: all 0.2s linear;
+            
+        }
+        .box{
+            flex: 1 1 200px;
+            margin: 2rem;
+           width:30rem ; 
+           height: auto;
+           border: 2px solid black;
+           background-color: rgb(175, 174, 174);
+           font-size: 1.5rem;
+        }
+        .box .boxmat{
+            margin-top: 2.5rem;
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+        }
+        .left{
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            float: right;
+           font-size: 2rem;
+           background-color: palevioletred;
+        }
+        #banana{
+            background-color: rgb(175, 30, 30);
+        }
+        #mango{
+            background-color: yellow;
+        }
+        /* for mobile support website */
+
+        
+@media(min-width: 380px) and (max-width:767px){
+    *{
+        font-size: 5px;
+    }
+    .boxar{
+        height: auto;
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><h1>Our Menu</h1></center>
+        <div id="boxar">
+            <div class="box">
+                <div class="left">Apple</div>
+                <div class="boxmat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quibusdam sequi voluptate natus facere reprehenderit fugiat quam impedit maiores tenetur? </div>
+            </div>
+
+            <div class="box">
+                <div class="left" id="banana">Banana</div>
+                <div class="boxmat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quibusdam sequi voluptate natus facere reprehenderit fugiat quam impedit maiores tenetur? </div>
+            </div>
+
+            <div class="box">
+                <div class="left" id="mango">Mango</div>
+                <div class="boxmat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quibusdam sequi voluptate natus facere reprehenderit fugiat quam impedit maiores tenetur? </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+</body>
+</html>
